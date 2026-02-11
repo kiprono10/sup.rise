@@ -1,0 +1,15 @@
+{
+  "name": "surprise",
+  "version": "1.0.0",
+  "description": "A surprise project",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
