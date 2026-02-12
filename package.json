@@ -2,12 +2,9 @@
   "name": "surprise",
   "version": "1.0.0",
   "description": "A surprise project",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "start": "serve -s ."
-  },
-  "dependencies": {
-    "serve": "^14.2.1"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
