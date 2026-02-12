@@ -79,6 +79,15 @@ button:hover {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   z-index: 100;
   pointer-events: none;
+  text-align: center;
+}
+
+.poem {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 500px;
 }
 }
 

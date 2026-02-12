@@ -9,7 +9,20 @@ yesBtn.addEventListener("click", () => {
         <source src="resources/istockphoto-1343666742-640_adpp_is.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="thankyou">Thank you! 💖</div>
+      <div class="thankyou">
+        <div>Thank you! 💖</div>
+        <div class="poem">
+          <p><strong>A Little Question, A Big Heart</strong></p>
+          <p>I don't have roses enough to show,<br>
+          All the feelings I already know.<br>
+          But in my heart, so soft and true,<br>
+          Every beat keeps choosing you.</p>
+          <p>If love were words, I'd write your name,<br>
+          In every smile, in every flame.<br>
+          So with a hope I can't pretend,<br>
+          I ask this now, not as a trend</p>
+        </div>
+      </div>
     </div>
   `;
   
