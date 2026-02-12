@@ -9,7 +9,7 @@ yesBtn.addEventListener("click", () => {
         <source src="resources/istockphoto-1343666742-640_adpp_is.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="thankyou">
+      <div class="thankyou" style="opacity: 0; transition: opacity 0.5s ease-in;">
         <div>Thank you! 💖</div>
         <div class="poem">
           <p><strong>A Little Question, A Big Heart</strong></p>
@@ -27,6 +27,15 @@ yesBtn.addEventListener("click", () => {
   `;
   
   const video = document.getElementById("videoPlayer");
+  const thankyou = document.querySelector(".thankyou");
+  
+  // Show thankyou when video starts playing
+  video.addEventListener("play", () => {
+    setTimeout(() => {
+      thankyou.style.opacity = "1";
+    }, 500);
+  }, { once: true });
+  
   video.play().catch(error => {
     console.error("Video playback failed:", error);
   });

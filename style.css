@@ -85,6 +85,8 @@ button:hover {
 .poem {
   font-size: 1rem;
   font-weight: normal;
+  font-style: italic;
+  color: #ff1744;
   margin-top: 20px;
   line-height: 1.6;
   max-width: 500px;
