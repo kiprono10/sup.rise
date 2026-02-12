@@ -6,6 +6,7 @@ const server = http.createServer((req, res) => {
   let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
   let extname = path.extname(filePath);
   let contentType = 'text/html';
+  let isBinary = false;
 
   switch (extname) {
     case '.js':
@@ -19,12 +20,19 @@ const server = http.createServer((req, res) => {
       break;
     case '.png':
       contentType = 'image/png';
+      isBinary = true;
       break;
     case '.jpg':
       contentType = 'image/jpg';
+      isBinary = true;
+      break;
+    case '.jfif':
+      contentType = 'image/jpeg';
+      isBinary = true;
       break;
     case '.mp4':
       contentType = 'video/mp4';
+      isBinary = true;
       break;
   }
 
@@ -41,7 +49,7 @@ const server = http.createServer((req, res) => {
       }
     } else {
       res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf8');
+      res.end(content, isBinary ? undefined : 'utf8');
     }
   });
 });
